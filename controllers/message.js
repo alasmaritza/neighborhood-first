@@ -1,5 +1,5 @@
 //import models
-var Message = require('../models/message');
+var Message = require('../models/Message');
 module.exports = {
     get: function (req, res) {
         Message.find({}).populate('user', '-pass').exec(function(err,result) {

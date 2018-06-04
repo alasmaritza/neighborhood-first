@@ -1,4 +1,4 @@
-var Category = require('../models/category');
+var Category = require('../models/Category');
 module.exports = {
     get: function (req, res) {
         Category.find({}).exec(function(err,result) {
