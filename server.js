@@ -36,7 +36,7 @@ mongoose.connect('mongodb://localhost:27017/test',function(err,db) {
 if (!err) {
       console.log('we are connected to mongo');
     //db.collection('messages').insertOne({'msg':'test'});
-}
+} 
 
 //if (err) throw err;
 //var db = client.db('test');
@@ -44,7 +44,7 @@ if (!err) {
 //  client.close();
 });
 
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_port = process.env.YOUR_PORT || process.env.PORT || 5000;
 var server_host = process.env.YOUR_HOST || '0.0.0.0';
 
 var server = app.listen(server_port, server_host, function() {
